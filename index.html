@@ -6,16 +6,80 @@
         <title>  DOM </title>
         </head>
         <body>
-<div id="first-div">
+
+<!--<div id="first-div"> id الوصول باستخدام
 <h1> programming languges</h1>
 <ul>
-    <li id="first-li">javascriot </li>
-    <li id="secont-li"> kotlin</li>
+    <li id="first-li">javascript </li>
+    <li id="second-li"> kotlin</li>
     <li id="last-li"> swift</li>
 </ul></div>
+<hr>
+<div > tag الوصول باستخدام
+    <h1> programming languges</h1>
+    <ul>
+        <li>javascript </li>
+        <li > kotlin</li>
+        <li > swift</li>
+    </ul></div>
+
+    <div >
+        <h1> programming languges</h1>
+        <p> thease are some progamming languges</p>
+        <ul class="languges">
+            <li >javascript </li>
+            <p> create interactive website by javascriot</p>
+            <li > kotlin</li>
+            <p> develop androide app by kotlin</p>
+            <li > swift</li>
+            <p> develop ios app by swift</p>
+        </ul></div>-->
+
+        <div > 
+            <h1> programming languges</h1>
+            <ul class="list">
+                <li>javascript </li>
+                <li > kotlin</li>
+                <li > swift</li>
+            </ul></div>
+            <hr>
+            <h3 >click :<span id ="click" >0</span> </h3>
+            <button type="button" onclick="add()">+</button>
+
 <script>   
-    let kotlin= document.getElementById(secont-li)
-    console
+     /*let kotlin= document.getElementById('secont-li')
+    console.log(kotlin)
+
+    let list=document.getElementsByTagName('li')
+    console.log(list[2])
+    
+    let text =document.querySelectorAll('languges')
+    console.log(text)
+
+    let android =document.querySelecto('#secont-li')
+    android.innerText="java"*/
+   
+   /* let android =document.querySelector('#second-li')
+    android.style.color="blue"
+    android.style.textAlign="center"
+    android.style.background="gray"*/
+
+    
+    //let langugeslist=document.querySelector('.list') 
+   // let ruby=document.createElement('li')
+   // ruby.innerText= "ruby"
+   // langugeslist.append(ruby)
+  //  console.log(langugeslist)
+
+  //  let ios =document.querySelectorAll('li')[2]
+  //ios.remove()
+
+let click=0;
+function add(){
+    click++;
+    document.getElementById("click").innerText=click
+};
+
 </script>
 
         </body>
